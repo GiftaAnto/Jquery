@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<script>
+			$(document).ready(function(){
+				$("#b1").click(function(){
+					alert("Text: " + $("#1").text());
+		   	    });
+				$("#b2").click(function(){
+					alert("HTML: " + $("#1").html());
+				});
+				$("#b3").click(function(){
+					alert($("#2").attr("class"));
+				});
+				$("#b4").click(function(){
+					$("#3").text("Text is set");
+				});
+				$("#b5").click(function(){
+					$("#4").html("<b>HTML is set</b>");
+				});
+				$("#b6").click(function(){
+					$("#5").val("Value is set");
+				});
+				$("#b7").click(function(){
+					$("h2").addClass("flip");
+			    });
+			});
+		</script>
+	</head>
+		<body>
+			
+			<h2>Get</h2>
+			<button id="b1">Get Text</button>
+			<button id="b2">Get HTML</button>
+			<p id="1">I am a <b>bold</b> text</p></p>
+			<button id="b3">Show class Value</button>
+			<p id="2" class="className">My Class Name will be displayed</p>
+
+			<h2>Set</h2>
+			<button id="b4">Set Text</button>
+			<p id="3"></p>
+			<button id="b5">Set HTML</button>
+			<p id="4"></p>
+			<button id="b6">Set Value</button>
+			<p><input type="text" id="5" value=""></p>
+
+			<h2>Add Class for all headings</h2>
+			<button id="b7">Add Class</button>
+			
+		</body>
+</html>

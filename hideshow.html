@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jquery-3.5.1.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<script>
+			$(document).ready(function(){
+				$("#b1").click(function(){
+					$("#1").toggle();
+			    });
+				$("#b2").click(function(){
+					$("#1").hide();
+				});
+				$("#b3").click(function(){
+					$("#1").show();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h2>Hide/Show</h2>
+		<p id="1">I am gonna toggle between hiding and showing</p>
+		<button id="b2">Hide</button><br><br>
+		<button id="b3">Show</button><br><br>
+		<button id="b1">Toggle between hiding and showing</button><br><br>
+	</body>
+</html>

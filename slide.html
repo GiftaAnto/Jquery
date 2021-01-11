@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jquery-3.5.1.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<script>
+			$(document).ready(function(){
+			$("#b1").click(function(){
+					$("#1").slideDown("slow");
+				});
+				$("#b2").click(function(){
+					$("#1").slideUp("slow");
+				});
+				$("#b3").click(function(){
+					$("#1").slideToggle("slow");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		
+		<h2>Slide Up/Slide Down</h2>
+		<div class="flip" id="b1">Slide Down</div>
+		<div class="flip" id="b2">Slide Up</div>
+		<div class="flip" id="b3">Slide Toggle</div>
+		<div class="pannel" id="1">I am gonna slide</div>
+		
+</body>
+</html>
